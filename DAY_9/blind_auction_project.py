@@ -1,7 +1,7 @@
 
 from art import logo
 print(logo)
-
+print(" ")
 def find_highest_bidder(bidding_dictionary):
     highest_bid = 0
     winner = ""
