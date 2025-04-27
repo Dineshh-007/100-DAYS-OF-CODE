@@ -1,5 +1,5 @@
 
-from art import logo
+from art1 import logo
 print(logo)
 print(" ")
 def find_highest_bidder(bidding_dictionary):
@@ -26,3 +26,5 @@ while continue_bidding:
         find_highest_bidder(bids)
     elif should_continue == "yes":
         print("\n"*20)
+        print("\n"*20)
+        
