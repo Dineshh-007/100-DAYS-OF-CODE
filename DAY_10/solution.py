@@ -28,7 +28,7 @@ operations = {
 
 
 def calculator():
-    print(art.logo)
+    print(art2.logo)
     should_accumulate = True
     num1 = float(input("What is the first number?: "))
 
@@ -48,6 +48,5 @@ def calculator():
             should_accumulate = False
             print("\n" * 20)
             calculator()
-
-
 calculator()
+
