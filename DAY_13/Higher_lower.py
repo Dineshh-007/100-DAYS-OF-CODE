@@ -39,4 +39,4 @@ while not is_continue:
 
     A=B
     count+=1
-    print(f"You're right...! Current score: {count}")
+    print(f"You're right.! Current score: {count}")
