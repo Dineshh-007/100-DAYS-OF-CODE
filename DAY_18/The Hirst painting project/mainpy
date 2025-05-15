@@ -1,0 +1,47 @@
+# import colorgram
+
+
+# colors = colorgram.extract('image.jpg', 12)
+# rgb = []
+
+# for color in colors:
+#     r=color.rgb.r
+#     g=color.rgb.g
+#     b=color.rgb.b
+#     my_colour=(r,g,b)
+#     rgb.append(my_colour)
+# print(rgb)      -------------------------->  We done our extraction of color from the image.jpg
+
+from turtle import Turtle,Screen,colormode
+import random
+
+tim=Turtle()
+colormode(255)
+tim.speed("fastest")
+
+dash_gap=50
+
+color_list=[(212, 158, 98), (232, 214, 115), (128, 168, 207),  (182, 75, 52), (207, 144, 194), (65, 85, 156), (129, 188, 137), (209, 95, 63)]
+
+tim.setheading(225)
+tim.penup()
+tim.forward(300)
+tim.pendown()
+tim.setheading(0)
+for row in range(10):
+    for col in range(10):
+        tim.dot(20, random.choice(color_list))
+        tim.penup()
+        tim.forward(dash_gap) 
+        tim.pendown()
+    tim.penup()
+    tim.backward(dash_gap * 10)
+    tim.pendown()
+    tim.left(90)
+    tim.penup()
+    tim.forward(dash_gap) 
+    tim.pendown() 
+    tim.right(90)
+
+screen=Screen()
+screen.mainloop()
