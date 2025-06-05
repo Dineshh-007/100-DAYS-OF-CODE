@@ -17,6 +17,7 @@ while len(guessed_states) < 30:
     guess_state = screen.textinput(title=f"{len(guessed_states)} / 30 ",prompt="What's the another state?").title()
 
     if guess_state == "Exit":
+        #use list comprehension which is used in US STATES GAME
         need_to_learn = []
         for state in all_states:
             if state not in guessed_states:
