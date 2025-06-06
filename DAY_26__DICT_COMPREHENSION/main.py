@@ -38,7 +38,6 @@
 names = {
     "students" : ["Alex", "Beth", "Caroline", "Dave", "Eleanor", "Freddie"],
     "marks" : [82,43,73,56,45,67]
-
 }
 
 import pandas
@@ -46,14 +45,13 @@ import pandas
 student_data = pandas.DataFrame(names)
 print(student_data)
 
-#loop through rows of a DataFrame
-# for (key , value) in student_data.items():
-#     print(value)
-
+#looping through a data frame
+for (key , value) in student_data.items():
+    print(value)
 
 # loop through rows of a DataFrame
-# for (index , row) in student_data.iterrows():
-#     print(row)
+for (index , row) in student_data.iterrows():
+    print(row)
 
 for (index , row) in student_data.iterrows():
     print(row.students)
