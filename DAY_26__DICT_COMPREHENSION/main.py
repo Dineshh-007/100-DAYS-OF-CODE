@@ -34,3 +34,30 @@
 # weather_f = { day : (c *9/5)+32 for (day,c) in weather_c.items()}
 #
 # print(weather_f)
+
+names = {
+    "students" : ["Alex", "Beth", "Caroline", "Dave", "Eleanor", "Freddie"],
+    "marks" : [82,43,73,56,45,67]
+
+}
+
+import pandas
+
+student_data = pandas.DataFrame(names)
+print(student_data)
+
+#loop through rows of a DataFrame
+# for (key , value) in student_data.items():
+#     print(value)
+
+
+# loop through rows of a DataFrame
+# for (index , row) in student_data.iterrows():
+#     print(row)
+
+for (index , row) in student_data.iterrows():
+    print(row.students)
+
+for (index , row) in student_data.iterrows():
+    if row.students == "Alex":
+        print(row.marks)   #print the mark of that row...
