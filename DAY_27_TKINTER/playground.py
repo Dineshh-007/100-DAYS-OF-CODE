@@ -21,6 +21,21 @@ class Car:
     def __init__(self,**kw):
         self.make = kw.get("make")
         self.model = kw.get("model")
+        print(self.model)
 
 car = Car(make = "Nissan",model= "GT-R")
 print(car.make)
+
+
+def bar(spam, eggs, toast='yes please!', ham=0):
+    print(spam, eggs, toast, ham)
+
+
+bar(toast='nah', spam=4, eggs=2)    # output:  4 2 nah 0
+
+
+def all_aboard(a, *args, **kw):
+    print(a, args, kw)
+
+
+all_aboard(4, 7, 3, 0, x=10, y=64)
