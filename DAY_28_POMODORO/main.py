@@ -57,8 +57,8 @@ def count_down(count):
         start_timer()
         # ✅
         marks = ""
-        work_sessions = math.floor(reps/2)
-        for _ in range(work_sessions):
+        work_session = math.floor(reps/2)
+        for _ in range(work_session):
             marks+= "✅"
         check_mark.config(text=marks)
 
